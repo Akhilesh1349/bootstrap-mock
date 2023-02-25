@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+    <title>My Website</title>
+   
+    <link rel="stylesheet" href="landingPage.css">
+   
+        <nav>
+            <!-- <label class="navbar">My Website </label> -->
+            <ul>
+                <li> <a href = "#">My Website</a></li>
+                <li>
+                    <a class = "Home" href="#">Home</a>
+                </li>
+                <li><a class="About" href="#">About</a></li>
+                <li><a class = "Contact" href="#">Contact</a></li>
+            </ul>
+        </nav>
+       
+    <body>
+        <h3 style="margin-left: -100px !important;">Environmental Pollution</h3>
+        <img src="https://www.shutterstock.com/image-illustration/ecology-ang-world-saving-concept-600w-1166324845.jpg" alt="" class="image">
+        <h4> What is environmental pollution?</h4>
+        <p>
+           
+            There are various types of pollution chiefly arising as a result of anthropogenic causes. Also contributing to pollution is globalisation, where humanity’s constant need for natural resources has slowly started to change the face of the earth.
+
+            Though the quality of living has drastically improved, other new issues have risen that gradually impact human health and the environment. In this article, we shall explore the meaning, causes and types of pollution. Also, we shall analyse the repercussions of pollution on human health and the environment.        </p>
+       
+       <div class="allCards">
+        <div class="cards">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/AlfedPalmersmokestacks.jpg" alt="" class="image1">
+           <div class="airPollution">
+            <h4>Air pollution</h4>
+            <p>
+                Air pollution refers to the release of harmful contaminants (chemicals, toxic gases, particulates, 
+                biological molecules, etc.) into the earth’s atmosphere. <span id="dots">...</span><span id="more">These contaminants are quite detrimental 
+                and in some cases, pose serious health issues.</span>
+            </p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+           </div>
+           
+        </div>
+        <div class="cards">
+            <img src="http://cdn.shopify.com/s/files/1/1172/5864/articles/9_Things_That_Causes_Water_Pollution_And_Its_Possible_Solution2_bff60b2e-12c7-4837-b4e0-eef7c8fa8e7f_1024x1024.jpg?v=1638664556" alt="" class="image1">
+           <div class="waterPollution">
+            <h4>Water pollution</h4>
+            <p>
+                Water pollution is said to occur when toxic pollutants and particulate matter are introduced 
+                into water bodies such as lakes, rivers and seas. <span id="dots">...</span><span id="more">
+                These contaminants are generally introduced 
+                by human activities like improper sewage treatment and oil spills. However, even natural processes 
+                such as eutrophication can cause water pollution.</span>       
+            </p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+           </div>
+        </div>
+
+        <div class="cards">
+            <img src="https://www.iberdrola.com/documents/20125/40615/suelo_746x419.jpg/0c7d2a0c-f3a8-0ec0-9ad7-61f7fbf023b6?t=1627531595008" alt="" class="image1">
+           <div class="soilPollution">
+            <h4>Soil pollution</h4>
+            <p>
+                Soil pollution, also called soil contamination, refers to the degradation of land due to the 
+                presence of chemicals or other man-made substances in the soil.<span id="dots">...</span><span id="more"> The xenobiotic substances alter 
+                the natural composition of soil and affect it negatively. These can drastically impact life directly
+                or indirectly. For instance, any toxic chemicals present in the soil will get absorbed by the plants.</span> 
+                  
+            </p>  
+            <button onclick="myFunction()" id="myBtn">Read more</button> 
+            </div>      
+        </div>
+       </div>   
+
+       <div>
+        <h3>
+            Form
+        </h3>
+        <form>
+            <label>Name</label> <br>
+            <input type="text" id="name" name="name" placeholder="Enter your name"> <br>
+            <label>Email</label> <br>
+            <input type="text" id="name" name="email" placeholder="Enter your email"> <br>
+            <label>Message</label> <br>
+            <input type="text" id="message" name="message" placeholder="Enter your message" style="width: 100%; height: 50px;"> <br>
+            <input type="submit" style=" background-color: rgb(92, 92, 241); color: aliceblue; ">
+
+        </form>
+        
+        <table>
+            <h3>Table</h3>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Message</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>John Smith</td>
+                <td>john@gmail.com</td>
+                <td>the blog is very informative</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Doe</td>
+                <td>jane@gmail.com</td>
+                <td>I like the information provided above</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bob Johnson</td>
+                <td>bob@gmail.com</td>
+                <td>We need to work together</td>
+            </tr>
+        </table>
+       </div>
+       <script>
+        function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+       </script> 
+
+    </body>
+</head>
